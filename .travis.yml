@@ -1,0 +1,14 @@
+language: ruby
+cache:
+- bundler
+before_script:
+- bundle exec rake db:create
+- bundle exec rake db:migrate
+- bundle exec rake assets:precompile
+deploy:
+  provider: heroku
+  api_key:
+    secure: "SF2DfG04PZoYHBnu0MlZqrD68I17JDCYtRkIJ9wmIX03k2izIeX54+qfAJtc7QJ2LgeE0Rapzt0i9NHMR/26JI9mf4V9oZK+3L3Acf/tpGZYWKFX+ioz2C8tXlZqCTOQF7tBk4kD7KLii3JraKUR4G1fdGbg/YJzJUs809tU2IYxny06bBk5tI9Y1vYFRW57Q/qKHwlvwSmz1KH6z5DZzfMdjXyILRoVBVqs3nqOI2pxf1yUcSA6959+4L5I4rLdZwBli5cBrqxlvsxmdMNdT/AxNlhpTw30Upu3kck7A6BzV29b1iG5qBY+elf2lLhBn4fL7BRz6EELJaOvs7YwS4yP66q1XSc3YsXzJpNEWpEudK+j1W2KXuuU1eC3xlZFWptG8rmRFjy5Ys6GUvYlhur6eUkrrJrjHW47Om0BRLLdMbusDA8yyNSyuZCLSCdG0Voj9Eu0P1E1klOjisebAwuMC28df9KfISg/Hafa04GmMFg0G+hFDsRGaQpDgDHMXOkYPQFJt6S0vUYNNZIIi2mWG5MKF/pYJL+xBLDnhs3yCTj1PrSMNZqJlFEYqwcq63BKN3p9hhuxb7cvAa4Nnu0BpMktnMCfOXOPu4QUcwSsTYqZnpGOLJufyumYmTQ9ek/nTGmKz6SR6T53TcK0NQNlb0yKBJzFHwTMoeHOBWo="
+  app: prueba-rails-restaurante
+  on:
+    repo: damonmoya/prueba-rails-restaurante
