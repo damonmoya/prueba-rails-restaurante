@@ -7,18 +7,18 @@ before_script:
 cache:
   bundler: true
   directories:
-    - node_modules
+  - node_modules
   yarn: true
 install:
-  - bundle install
-  - nvm install node
-  - node -v
-  - npm i -g yarn
-  - yarn
+- bundle install
+- nvm install node
+- node -v
+- npm i -g yarn
+- yarn
 deploy:
   provider: heroku
   api_key:
-    secure: "SF2DfG04PZoYHBnu0MlZqrD68I17JDCYtRkIJ9wmIX03k2izIeX54+qfAJtc7QJ2LgeE0Rapzt0i9NHMR/26JI9mf4V9oZK+3L3Acf/tpGZYWKFX+ioz2C8tXlZqCTOQF7tBk4kD7KLii3JraKUR4G1fdGbg/YJzJUs809tU2IYxny06bBk5tI9Y1vYFRW57Q/qKHwlvwSmz1KH6z5DZzfMdjXyILRoVBVqs3nqOI2pxf1yUcSA6959+4L5I4rLdZwBli5cBrqxlvsxmdMNdT/AxNlhpTw30Upu3kck7A6BzV29b1iG5qBY+elf2lLhBn4fL7BRz6EELJaOvs7YwS4yP66q1XSc3YsXzJpNEWpEudK+j1W2KXuuU1eC3xlZFWptG8rmRFjy5Ys6GUvYlhur6eUkrrJrjHW47Om0BRLLdMbusDA8yyNSyuZCLSCdG0Voj9Eu0P1E1klOjisebAwuMC28df9KfISg/Hafa04GmMFg0G+hFDsRGaQpDgDHMXOkYPQFJt6S0vUYNNZIIi2mWG5MKF/pYJL+xBLDnhs3yCTj1PrSMNZqJlFEYqwcq63BKN3p9hhuxb7cvAa4Nnu0BpMktnMCfOXOPu4QUcwSsTYqZnpGOLJufyumYmTQ9ek/nTGmKz6SR6T53TcK0NQNlb0yKBJzFHwTMoeHOBWo="
+    secure: Qoi/X83BZ52KhaF3kZCFQvoG/Vw8Zo5l+Vvz4/ahTduz9SXRGzzuRvEMlX83J6OQa0SA8l5+UPHWr8E+tJ+VroE0zWO2oq8CXD6VEH3A8RA1dHejBl40ICz3xPmFhIWkEncJ4FvbHSTtz9nbn2P+AiB8o9S/Hfx0T/azMpoQEkSk1NclRjrXwNaJLD5x/n24EbV8UjnUqc4WTQt1PDwImJXdvjbWfYOlBofmUFxn4wfHYuLrGlvOYdDG5LzVXcRDeu5J2XwfeWJ7mWOW3X5C3/3Tct9cPXmNGsJ1pXP2rvsMN+HUgIVh1lyyv2J46Fz7cDbeZh6HMBIumlK+USbc5kWXMFmsubGp25A3ziaAHQVl9+RKETfXq6RXxn4J1LxFu0G/rkX+pywlf1P0jTkHnlNxa/7uB1txi4KrTeiC6p8yVQaOACZQautU8PC0JP/Q3JctESImm3pRdsCHWDnAAheYGC948KBjpQpXEkvt4x0z8kdFwC60tb/Lkoqr1s0WuPH4j9rCZlkpBsotjkOuHVOuWYoE7zZj4g14hedYqGNu7TS7zQ6HdH8O4qz1EPvOlXpuMEBw8W7/RYo7WvtccAuUPDDoL4c+3w4/lok098lqqodZpDwRDOYMDY/hbwh3lkU+NxOJ1stkHCgPIS8WMWq8hQoZipcaztSABJJQ24s=
   app: prueba-rails-restaurante
   on:
     repo: damonmoya/prueba-rails-restaurante
